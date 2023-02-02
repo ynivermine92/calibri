@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<!-- шивт альт ф -->
+
+<body>
+   <header class="header"> 
+        <div class="container">
+            <div class="header__inner">
+            <a class="logo" href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+
+            <div class="header__mob-menu">
+                <a class="header__item-sum" href="#">
+                    <svg class="header__item-sumsvg">
+                        <use xlink:href="images/icons/sum.svg#sum"></use>
+                    </svg>
+                </a>
+                <a class="header__item-cart" href="#">
+                    <svg class="header__item-cartsvg">
+                        <use xlink:href="images/icons/sprite/cart.svg#cart"></use>
+                    </svg>
+                </a>
+            </div>
+
+
+             <form class="header__form-search" action="header-form">
+                <button class="header__btn">каталог</button>
+                <input class="header__input" type="text" placeholder="Поиск">
+                <input class="header__input" type="text" placeholder="Поиск по сайту">
+             </form>
+              <nav class="menu menu--active">
+                <div class="menu__mob">
+            </div> 
+
+                <ul class="menu__items">
+                    <li class="menu__item"><a class="menu__item-link menu__item-link--active" href="#">Акции</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Доставка</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Галерея</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">
+                            <svg class="menu__item-linksvg">
+                            <use xlink:href="images/icons/sprite/cart.svg#cart"></use>
+                            </svg>
+                    </a></li>
+                </ul>
+              </nav>
+
+
+
+
+            </div>
+            
+           <div class="menu-bottom">
+                <ul class="menu-bottom__items">
+                    <li class="menu-bottom__item"><a class="menu-bottom__item-link" href="#">Латексные шары</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__item-link" href="#">Фольгированые шары</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__item-link" href="#">Цифры</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__item-link" href="#">3D Сферы</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__item-link" href="#">Хромовые шары</a></li>
+                </ul>
+             
+              <div class="menu-bottom__user">
+                    <a class="menu-bottom__user-phone" href="tel:+803555555">+8 03 555 555</a>
+                <div class="menu-bottom__social">
+                    <a class="menu-bottom__social-item" href="#">
+                        <svg class="menu-bottom__social-link">
+                            <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                        </svg>
+                     </a>
+                </div>
+                <div class="menu-bottom__social">
+                    <a class="menu-bottom__social-item" href="#">
+                        <svg class="menu-bottom__social-link">
+                            <use xlink:href="images/icons/sprite/viber.svg#viber"></use>
+                        </svg>
+                     </a>
+                </div>
+                <div class="menu-bottom__work-mode">
+                    <span> Режим работы</span>
+                    <span>Круглосуточно</span>
+                </div>
+                
+            </div>
+        </div> 
+        <div class="menu__burgerMob">
+            <div class="menu__burgerMob-blockClose"></div>
+            <ul class="menu__burgerMob-items">
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link menu__burgerMob-link--active" href="#">Акции</a></li>
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link" href="#">Доставка</a></li>
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link" href="#">Контакты</a></li>
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link" href="#">Галерея</a></li>
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link" href="#">Отзывы</a></li>
+                <li class="menu__burgerMob-item"><a class="menu__burgerMob-link" href="#">
+                </a></li>
+            </ul>
+             <span class="menu__burgerMob-subtitle">Телефон</span>
+            <a class="menu__burgerMob-phone" href="tel:+803555555">+8 03 555 555</a>
+
+             <div class="menu__burgerMob-inner">
+                    <span>Мы в соц. сетях</span>
+                <div class="menu-bottom__social">
+                    <a class="menu-bottom__social-item" href="#">
+                        <svg class="menu-bottom__social-link">
+                            <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                        </svg>
+                     </a>
+                </div>
+                <div class="menu-bottom__social">
+                    <a class="menu-bottom__social-item" href="#">
+                        <svg class="menu-bottom__social-link">
+                            <use xlink:href="images/icons/sprite/viber.svg#viber"></use>
+                        </svg>
+                     </a>
+                </div>
+
+
+
+             </div>
+
+
+            
+        </div>
+        </div>
+    </header>  
+   <main class="main">
+            <section class="top">
+                <picture>
+                    <source srcset="images/top.jpg" media="(min-width: 650px)">
+                    <img class="top__images" src="images/top-mob.jpg" alt="MDN" style="width:auto;">
+                   </picture>
+
+        
+
+                   
+            <div class="container">
+            <div class="top__wrapper">
+                <h1 class="top__title">Распродажа</h1>
+                <h2 class="top__sub-title">в честь Нового года!</h2>
+                <div class="top__inner">
+                    <a class="top__propmo" href="#">Все акции</a>
+                    <a class="top__price" href="#">Подробнее</a>
+                </div>
+            </div>
+            </div>
+        </section>    
+          <section class="popiral-category">
+            <div class="container">
+                <h3 class="popiral-category__title">популярные категории</h3>
+                <span class="popiral-category__title-category">смотреть всё</span>
+                <div class="popiral-category__items">
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/1.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Баблобоксы</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/1.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Фонтаны с цифрами</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/1.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Готовые композиции</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/1.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Шарики, наборы, оформление
+                            комнаты на выписку</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/2.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Латексные шары</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/2.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Шарики на день рождения</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/2.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Фольгированые шары</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/2.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">3D Сферы, Bubble</span>
+                    </div>
+                    <div class="popiral-category__item-box">
+                    </div>
+
+                </div>
+                <h3 class="popiral-category__title">Лидеры продаж</h3>
+                    <span class="popiral-category__title-category">показать всё</span>
+                <div class="popiral-category__items">
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Латексные шары</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Латексные шары</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Латексные шары</span>
+                    </div>
+                    <div class="popiral-category__item">
+                        <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                        <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                        <span class="popiral-category__icon-text">Латексные шары</span>
+                    </div>
+
+
+                </div>
+            </div>
+<!--                 <div class="popiral-category__sale">
+                    <picture>
+                    <source srcset="images/popiral-category/happy-party.jpg" media="(min-width: 650px)">
+                    <img class="popiral-category__sale-images" src="images/popiral-category/happy-party-mob.jpg" alt="MDN" style="width:auto;">
+                </picture>
+
+                    <div class="popiral-category__wrapper">
+                        <div class="popiral-category__inner">
+                        <h2 class="popiral-category__sale-title">Скидка 5%</h2>
+                        <div class="popiral-category__sale-sabtitle">на первый заказ</div>
+                        <form class="popiral-category__form" action="#">
+                            <input class="popiral-category__input" type="text" >
+                            <button class="popiral-category__btn">Получить скидку</button>
+                        </form>
+                        </div>
+                    </div>
+                </div> -->
+             <div class="container">
+            <h3 class="popiral-category__title">Лидеры продаж</h3>
+            <span class="popiral-category__title-category">показать всё</span>
+        <div class="popiral-category__items">
+            <div class="popiral-category__item">
+                <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                <span class="popiral-category__icon-text">Латексные шары</span>
+            </div>
+            <div class="popiral-category__item">
+                <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                <span class="popiral-category__icon-text">Латексные шары</span>
+            </div>
+            <div class="popiral-category__item">
+                <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                <span class="popiral-category__icon-text">Латексные шары</span>
+            </div>
+            <div class="popiral-category__item">
+                <img src="images/popiral-category/3.jpg" class="popiral-category__icon" alt="">
+                <a class="popiral-category__item-link" href="#">Добавить в корзину</a>
+                <span class="popiral-category__icon-text">Латексные шары</span>
+            </div>
+
+
+
+           </div>
+        </div>
+        </section> 
+    </main> --> 
+<!--     <footer class="footer">
+        <div class="footer__wrapper">
+            <a class="footer__logo" href="">
+                <img class="footer__logo-images" src="images/logo.png" alt="">
+            </a>
+            <div class="footer__contact">
+                <span class="footer__contact-adress">Адрес:</span>
+                <div class="footer__contact-job">Заветный, ул. Энгельса, 57/2</div>
+                <span class="footer__contact-adress">Режим работы:</span>
+                <div class="footer__contact-job">Круглосуточно</div>
+            </div>
+            <div class="footer__contact">
+                <span class="footer__contact-adress">Адрес:</span>
+                <div class="footer__contact-job">Армавир, ул. 8 Марта, 365</div>
+                <span class="footer__contact-adress">Режим работы:</span>
+                <div class="footer__contact-job">Пн-Пт: 10:00-20:00</div>
+            </div>
+            <div class="footer__contact">
+               
+                <a class="footer__user-phone" href="tel:+803555555">+8 03 555 555</a>
+                <a class="footer__social-item" href="#">
+                    <div class="footer__contact-items">
+                    <svg class="menu-bottom__social-link">
+                        <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                    </svg>
+                </a>
+                    <a class="footer__social-item" href="#">
+                        <svg class="menu-bottom__social-link">
+                            <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <span class="footer__social-info">мы в соц. сетях</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper-mob">
+            <span>Контакты</span>
+            <div class="footer__contact">
+                <a class="footer__user-phone" href="tel:+803555555">+8 03 555 555</a>
+            </div>
+            <a class="footer__social-item" href="#">
+                <svg class="menu-bottom__social-link">
+                    <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                </svg>
+            </a>
+            <a class="footer__social-item" href="#">
+                <svg class="menu-bottom__social-link">
+                    <use xlink:href="images/icons/sprite/instagram.svg#instagram"></use>
+                </svg>
+            </a>
+            <div class="footer__contact">
+                <span class="footer__contact-tamsJob">Адрес:</span>
+                <span class="footer__contact-adress">Заветный</span>
+                <span class="footer__contact-adress">пр. Лазурный, д.11</span>
+                <div class="footer__contact-job">Режим работы</div>
+                <div class="footer__contact-job">Круглосуточно</div>
+            </div>
+        </div>
+    </footer> -->
+    
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
+<!-- шивт альт ф -->

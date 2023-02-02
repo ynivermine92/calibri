@@ -1,0 +1,113 @@
+.footer{
+    &__wrapper{
+        max-width: 1234px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper-mob{
+        display: none;
+    }
+    &__logo-images{
+        width: 118.69px;
+        height: 60px;
+    }
+    &__contact-adress{
+        font-size: 13px;
+        color: #7C7C7C;
+        @extend %quicksand-500;
+        display: block;
+        padding-bottom: 7px;
+    }
+    &__contact-job{
+        font-size: 18px;
+        color: #000000;
+        @extend %quicksand-600;
+        padding-bottom: 20px;
+
+    }
+    &__user-phone{
+        @extend %quicksand-700;
+        display: block;
+        font-size: 20px;
+        padding-bottom: 27px;
+    }
+
+    &__contact-items{
+        display: flex;
+        align-items: center;
+    }
+    &__contact:last-child{
+        background: none;
+        padding: 0;
+    }
+    &__contact{
+        background: #F7F7F7;
+        border-radius: 5px;
+        padding: 15px 60px 0 20px;
+        
+    }
+    &__social-item +.footer__social-item{
+        padding-left: 15px;
+    }
+    &__social-info{
+        font-size: 18px;
+        @extend %quicksand-400;
+        padding-left: 20px;
+        color: #5E5E5E;
+    }
+}
+
+
+@media (max-width: 1160px){
+    .footer{
+        &__wrapper{
+            max-width: 950px;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 1020px){
+    .footer{
+        &__wrapper{
+            max-width: 700px;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 650px){
+    .footer{
+         &__wrapper{
+             display: none;
+         }
+         &__wrapper-mob{
+             display: block;
+             font-size: 18px;
+             text-align: center;
+             padding-top: 40px;
+             background-color: #CA4ACB;
+         }
+         &__contact{
+             background: none;
+             padding: 0;
+         }
+         &__user-phone{
+             padding: 10px 0 10px 0;
+             font-size: 20px;
+             background-color: none;
+             border-color: none;
+         }
+         &__tamsJob{
+             font-size: 18px;
+             padding-top: 10px;
+             display: block;
+         }
+         &__contact-adress{
+            color: #ffff;
+            padding: 10px 0 10px 0;
+         }
+     }
+ 
+ }

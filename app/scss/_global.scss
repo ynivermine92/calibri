@@ -1,0 +1,28 @@
+html,
+body {
+	height: 100%;
+	@extend %quicksand-500;
+	color: #000000;
+}
+.container{
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main {
+	flex: 1 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+a{
+	color: #000000;
+}
+@media (max-width: 650px){
+    .container{
+        padding: 0;
+    }
+}
+

@@ -1,0 +1,38 @@
+$accent : #F188F2;    
+
+%quicksand-700{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+}
+%quicksand-600{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-weight: 600;
+}
+%quicksand-500{
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: 500;
+}
+%quicksand-400{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+}
+%btn{
+    background-color: $accent;
+    color: #ffff;
+    font-size: 16px;
+    @extend %quicksand-700;
+    border: none;
+}
+
+
+
+
+//скрывает input за лементом
+/* %checkbox-hidden,
+%radio-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute ;
+} */
