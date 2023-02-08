@@ -3,6 +3,7 @@ body {
 	height: 100%;
 	@extend %quicksand-500;
 	color: #000000;
+    overflow: auto;
 }
 .container{
     max-width: 1380px;
@@ -20,6 +21,7 @@ body {
 a{
 	color: #000000;
 }
+input {outline:none;}
 @media (max-width: 650px){
     .container{
         padding: 0;

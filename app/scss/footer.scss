@@ -33,6 +33,10 @@
         display: block;
         font-size: 20px;
         padding-bottom: 27px;
+        &:hover{
+            color: rgb(241, 136, 242);
+            transition: all 0.3s ease 0s;
+        }
     }
 
     &__contact-items{

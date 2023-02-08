@@ -30,6 +30,10 @@
             right: -18px;
             bottom: 5px;
         }
+        &:hover{
+            color: #f188f2;
+            transition: all 0.5s;
+        }
     }
     &__items{
         display: grid;
@@ -66,8 +70,13 @@
         display: block;
         top: 184px;
         left: 20px; 
-        transition: all .3s;
+        transition: all 0.5s;
         transform: translateY(330%);
+        &:hover{
+            color: black;
+            transition: all 0.8s;
+            border: 2px solid black;
+        }
     }
     &__icon-text{
         display: block;
@@ -171,6 +180,17 @@
         margin-top: 30px;
         background: none;
         @extend %quicksand-700;
+        &:hover{
+            background: #000;
+            transition: all .5s;
+            color: #f188f2;
+        }
+    }
+    &__input{
+        color: #6C6C6C;
+        font-size: 18px;
+        @extend %quicksand-600;
+        border: none;
     }
 }
 

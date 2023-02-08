@@ -1,8 +1,13 @@
 $(function(){
+  $(document).ready(function(){
+    
+    $('.popiral-category__input').inputmask({"mask": "+380 999-9999"}); 
+  });
 
   $('.menu__mob').on('click', function(e){
     e.preventDefault();
     $('.menu__mob').toggleClass('menu__mob--active')
+    $('.header__opacity').toggleClass('is-active')
     if(this.classList.contains('menu__mob--active')){
       $('.menu__mob').css({'background':'#feddff'});
       $('.menu__burgerMob').css({'display':'block'});
@@ -15,6 +20,7 @@ $(function(){
   })
   $('.menu__burgerMob-blockClose').on('click', function(e){
      $('.menu__burgerMob').css({'display':'none'}); 
+     $('.menu__mob').css({'background':'none'});
   })
 
   window.matchMedia('(max-width: 1100px)').addListener(e=>{

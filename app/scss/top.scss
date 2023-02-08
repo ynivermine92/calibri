@@ -37,6 +37,11 @@
         background: #FFFFFF;
         display: inline-block;
         border-radius: 13px;
+        &:hover{
+            background: #000000;
+            transition: all 0.5s;
+            color: #f188f2
+        }
     }
     &__price{
         padding: 25px 40px;
@@ -47,6 +52,11 @@
         @extend %quicksand-700;
         display: inline-block;
         margin-left: 40px;
+        &:hover{
+            background: #000000;
+            transition: all 0.5s;
+            color: #f188f2
+        }
     }
 }
 
