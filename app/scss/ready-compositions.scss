@@ -1,0 +1,57 @@
+.popiral-category {
+    &__search{
+        display: flex;
+        align-items: center;
+    }
+    &__label {
+        color: $demo-blue;
+        font-size: 20px;
+        @extend %quicksand-600;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center; 
+    }
+
+    &__price-checkbox{
+        width: 35px;
+        height: 35px;
+        border: 1px solid #e6e6e6;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #000000;
+            box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
+        }
+    }
+    &__price-inputFrom{
+        cursor: pointer;
+        height: 42px;
+        width: 103px;
+        padding-left: 10px;
+        border: 1px solid #e6e6e6;
+        margin: 0 10px;
+        &:hover{
+            border: 1px solid #000000;
+            box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
+            color: $demo-blue;
+        }
+    }
+    &__price-inputTo{
+        cursor: pointer;
+        height: 42px;
+        width: 103px;
+        padding-left: 10px;
+        border: 1px solid #e6e6e6;
+        margin: 0 10px;
+        &:hover{
+            border: 1px solid #000000;
+            box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
+            color: $demo-blue;
+        }
+    }
+    &__text{
+        margin: 0 15px;
+    }
+}

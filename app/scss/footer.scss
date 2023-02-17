@@ -1,4 +1,5 @@
 .footer{
+    padding-top: 60px;
     &__wrapper{
         max-width: 1234px;
         margin: 0 auto;
@@ -112,6 +113,8 @@
             color: #ffff;
             padding: 10px 0 10px 0;
          }
+         &__contact {
+            padding: 15px 36px 0 20px;
+        }
      }
- 
  }

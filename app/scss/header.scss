@@ -23,6 +23,7 @@
             position: absolute;
             right: -47px;
             bottom: 16px;
+            @extend %quicksand-500;
         }
         &:hover{
             background-color: #C949CA;
@@ -39,6 +40,11 @@
         line-height: 17px;
         border: 2px solid #A9A9A9;
         border-radius: 9px;
+        cursor: pointer;
+        &:hover{
+            border: 2px solid $demo-blue ; 
+            color: $demo-blue;
+        }
     }
     &__input + .header__input{
         display:none;
@@ -76,6 +82,7 @@
             opacity: 0.7;
         }
     }
+
 }
 @media (max-width: 1324px){
     .header{
@@ -196,6 +203,10 @@
             position: absolute;
             left: 24px;
             top: 20px;
+            &:hover{
+                fill:#C949CA; ;
+                transition: all 0.5s;
+            }
         }
         &__item-cartsvg{
             width: 18px;
@@ -203,6 +214,10 @@
             position: absolute;
             left: 20px;
             top: 20px;
+            &:hover{
+                fill:#C949CA; ;
+                transition: all 0.5s;
+            }
         }
     }
 }
@@ -235,9 +250,9 @@
     }
     &__burgerMob-blockClose{
         background-image: url('../images/icons/close.svg');
-        position: absolute;
+        position: relative;
+        left: 556px;
         top: 35px;
-        right: 20px;
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -364,8 +379,8 @@
             max-width: 800px;
         }
         &__burgerMob-blockClose{
-            top: 111px;
-            right: 50px;
+            left: 400px;
+            top: 55px;
         }
         &__items-mob--acvtive{
             display: block;
@@ -425,8 +440,20 @@
             padding-top: 30px;
         }
         &__burgerMob-blockClose{
-            top: 35px;
+            top: 62px;
         }
+    }
+}
+
+@media (max-width: 450px){
+    .menu{
+        &__burgerMob-item{
+            padding-left: 10px;
+        }
+        &__burgerMob-blockClose{
+            left: 280px;
+        }
+
     }
 }
 
