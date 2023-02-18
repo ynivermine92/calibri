@@ -1,0 +1,188 @@
+.products {
+    &__title {
+        font-size: 36px;
+        padding-bottom: 15px;
+        @extend %quicksand-600;
+        color: #3A3A3A;
+    }
+
+    &__wrapper {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    &__inner {
+        padding-left: 70px;
+        padding-top: 50px;
+    }
+
+    &__images {
+        height: 717px;
+        max-width: 828px;
+        background-repeat: no-repeat;
+    }
+
+    &__categor {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .popiral-category__icon-description {
+        font-size: 70px;
+        padding: 0;
+        position: relative;
+        @extend %quicksand-600;
+
+        &::before {
+            content: 'u';
+            position: absolute;
+            font-size: 20px;
+            right: -15px;
+            bottom: 10px;
+
+
+        }
+    }
+
+    .popiral-category__icon-discount {
+        font-size: 28px;
+        @extend %quicksand-500;
+        text-decoration: line-through;
+        position: relative;
+        padding-left: 60px;
+
+        &::before {
+            content: 'u';
+            position: absolute;
+            font-size: 20px;
+            right: 15px;
+            bottom: 2px;
+        }
+    }
+
+    .popiral-category__icon-benefit {
+        font-size: 28px;
+        @extend %quicksand-600;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+            content: '%';
+            position: absolute;
+            font-size: 20px;
+            right: -20px;
+            bottom: 0;
+
+
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 40px 0px 66px 0px;
+        padding: 25px 120px;
+        font-size: 28px;
+        @extend %quicksand-700;
+        background-color: #C949CA;
+        border-radius: 10px;
+        color: #ffff;
+
+        &:hover {
+            background: #000000;
+            transition: all 0.5s;
+            color: #f188f2
+        }
+    }
+
+    &__items {
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        color: #000000;
+        @extend %quicksand-600;
+    }
+
+    &__item {
+        padding-top: 15px;
+        @extend %quicksand-500;
+    }
+
+    &__item-sum {
+        font-size: 14px;
+        @extend %quicksand-500;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .products {
+        &__images {
+            height: 650px;
+            max-width: 650px;
+        }
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .products {
+        &__images {
+            height: 500px;
+            max-width: 500px;
+        }
+        &__inner{
+            padding-left: 20px;
+        }
+        &__btn{
+            padding: 20px 101px;
+            display: inline-block;
+        }
+        .popiral-category__icon-description{
+            font-size: 45px;
+        }
+        .products .popiral-category__icon-discount{
+            padding-left: 20px;
+        }
+    }
+
+}
+@media (max-width: 930px) {
+    .products {
+        &__wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+        &__inner{
+            padding-left: 0;
+            padding-top: 10px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__btn{
+            margin-bottom: 20px;
+        }
+    }
+
+}
+@media (max-width: 500px) {
+    .products {
+        &__images {
+            height: 320px;
+            max-width: 320px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .products {
+        &__btn {
+            padding: 20px 70px;
+        }
+        .popiral-category__icon-discount{
+            padding-left: 40px;
+        }
+        .popiral-category__icon-benefit {
+            padding-left: 15px;
+        }
+    }
+}

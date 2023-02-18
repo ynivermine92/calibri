@@ -109,7 +109,7 @@ $border-width: 1px;
 
 // Select function
 @mixin form-input-select(){
-  // see https://codepen.io/jnowland/pen/KzYQxp for reset function
+  // see x for reset function
   @include _select-form-reset; 
   color: $demo-blue;
   display: block;
