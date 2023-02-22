@@ -1,4 +1,30 @@
 $(function(){
+  document.querySelectorAll('.counter').forEach((counter) => {
+    const btnMinus = counter.querySelector('.minus');
+    const value = counter.querySelector('.counter__value');
+    const btnPlus = counter.querySelector('.plus');
+  
+    btnMinus.addEventListener('click', () => {
+      if (parseInt(value.innerText) > 1) {
+        value.innerText = --value.innerText;
+        disabled();
+      } 
+    });
+  
+    btnPlus.addEventListener('click', () => {
+      value.innerText = ++value.innerText;
+      disabled();
+    });
+    
+    function disabled() {
+      if (parseInt(value.innerText) == 1) {
+        btnMinus.classList.add('disabled');
+      } else {
+        btnMinus.classList.remove('disabled');
+      }
+    }
+  });
+  
 $('.popiral-category__select-arrow').on('click', function(e){
 
   const arrow = document.querySelector('.popiral-category__select-arrow');

@@ -28,6 +28,12 @@ $demo-border: #E6E6E6;
     @extend %quicksand-700;
     border: none;
 }
+%btnhover{
+    box-shadow: 0 0 5pt 0.5pt #000000; 
+    background: #000;
+    transition: all .5s;
+    color: #f188f2;
+}
 
 
 

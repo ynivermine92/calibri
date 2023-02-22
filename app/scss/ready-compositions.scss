@@ -1,8 +1,9 @@
 .popiral-category {
-    &__search{
+    &__search {
         display: flex;
         align-items: center;
     }
+
     &__label {
         color: $demo-blue;
         font-size: 20px;
@@ -11,47 +12,124 @@
         line-height: 130%;
         letter-spacing: 0.03em;
         display: flex;
-        align-items: center; 
+        align-items: center;
     }
 
-    &__price-checkbox{
+    &__price-checkbox {
         width: 35px;
         height: 35px;
         border: 1px solid #e6e6e6;
         border-radius: 7px;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             border: 1px solid #000000;
             box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
         }
     }
-    &__price-inputFrom{
+
+    &__price-inputFrom {
         cursor: pointer;
         height: 42px;
         width: 103px;
         padding-left: 10px;
         border: 1px solid #e6e6e6;
         margin: 0 10px;
-        &:hover{
+
+        &:hover {
             border: 1px solid #000000;
             box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
             color: $demo-blue;
         }
     }
-    &__price-inputTo{
+
+    &__price-inputTo {
         cursor: pointer;
         height: 42px;
         width: 103px;
         padding-left: 10px;
         border: 1px solid #e6e6e6;
         margin: 0 10px;
-        &:hover{
+
+        &:hover {
             border: 1px solid #000000;
             box-shadow: 0 2px 3px rgba($demo-blue, 0.1) inset;
             color: $demo-blue;
         }
     }
-    &__text{
+
+    &__text {
         margin: 0 15px;
+    }
+}
+
+
+@media (max-width: 1020px) {
+    .popiral-category {
+
+
+        &__search {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__label {
+            display: flex;
+            justify-content: space-between;
+            max-width: 350px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        &__price-inputFrom {
+            margin: 0px 22px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .popiral-category {
+        &__items{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 28px 0px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .popiral-category {
+
+        &__text {
+            font-size: 17px;
+        }
+    }
+
+}
+@media (max-width: 530px){
+    .popiral-category {
+        &__items{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px 0px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .popiral-category {
+        &__label {
+            width: 310px;
+        }
+        &__price-inputFrom {
+            margin: 0px;
+        }
+        &__rice-checkbox {
+            margin-right: 9px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .popiral-category {
+        &__items{
+            grid-template-columns: 1fr;
+        }
     }
 }

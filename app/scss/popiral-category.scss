@@ -22,25 +22,25 @@
         margin-bottom: 20px;
         display: inline-block;
 
-        &::after {
-            content: "";
-            width: 11px;
-            height: 6px;
-            background-image: url(../images/icons/arrow.svg);
-            position: absolute;
-            right: -4px;
-            background-repeat: no-repeat;
-            transform: rotate(84deg);
-            right: -18px;
-            bottom: 3px;
-        }
 
         &:hover {
             color: #f188f2;
             transition: all 0.5s;
         }
     }
-
+    .basket__main{
+        display: inline-block;
+    }
+    .popiral-category__title-category:hover + .arrow{
+        fill: black;
+    }
+    .arrow{
+        fill:  #797979;
+        width: 10px;
+        height: 10px;
+        transform: rotate(90deg);
+        transition: all 0.5s;
+    }
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -57,7 +57,7 @@
 
     &__icon {
         max-width: 318px;
-        height: 276px;
+        height: 350px;
     }
 
     &__item-box {
@@ -68,8 +68,8 @@
     &__item:hover &__item-link {
         transform: translateY(0);
         z-index: 1;
+        top: 120px;
     }
-
     &__item-link {
         position: absolute;
         padding: 24px 42px;
@@ -80,7 +80,7 @@
         font-size: 18px;
         @extend %quicksand-600;
         display: block;
-        top: 230px;
+        top: 180px;
         left: 20px;
         transition: all 0.5s;
         transform: translateY(330%);
@@ -253,6 +253,7 @@
 
     &__box {
         padding-bottom: 30px;
+        padding-left: 10px;
     }
 
     &__icon-text {
@@ -395,7 +396,9 @@
             width: 150px;
             padding-top: 0;
         }
-
+        &__items {
+            grid-gap: 40px 35px;
+        }
         &__item {
             max-width: 163px;
         }
@@ -412,19 +415,20 @@
         &__item:hover .popiral-category__item-link {
             transform: translateY(-210%);
         }
+        &__item-link{
+            top: 180px;
+        }
+        &__item:hover &__item-link {
+            top: 180px;
+        }
     }
 }
 
 @media (max-width: 650px) {
     .popiral-category {
-        &__title-category {
-            display: none;
-        }
-
         &__title {
-            text-align: center;
             font-size: 18px;
-            width: 100%;
+            padding-left: 10px;
         }
     }
 }
@@ -463,6 +467,9 @@
 
         &__btn {
             padding: 20px 2px;
+        }
+        &__items {
+            grid-gap: 30px 22px;
         }
     }
 }

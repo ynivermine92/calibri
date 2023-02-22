@@ -26,8 +26,7 @@
             @extend %quicksand-500;
         }
         &:hover{
-            background-color: #C949CA;
-            transition: all 0.5s;
+          @extend %btnhover;
         }
     }
     &__input{
@@ -42,7 +41,9 @@
         border-radius: 9px;
         cursor: pointer;
         &:hover{
-            border: 2px solid $demo-blue ; 
+            border: 2px solid $demo-blue ;
+            box-shadow: 0 0 5pt 0.5pt black; 
+            transition: all .5s;
             color: $demo-blue;
         }
     }
