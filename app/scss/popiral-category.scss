@@ -80,7 +80,7 @@
         font-size: 18px;
         @extend %quicksand-600;
         display: block;
-        top: 180px;
+        top: 260px;
         left: 20px;
         transition: all 0.5s;
         transform: translateY(330%);
@@ -98,7 +98,7 @@
         @extend %quicksand-600;
         text-align: center;
         padding-top: 20px;
-        width: 250px;
+        padding: 0 30px;
     }
 
     &__icon-price {
@@ -401,8 +401,13 @@
         }
         &__item {
             max-width: 163px;
+            text-align: center;
+        }   
+        &__icon-discount{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
         }
-
         &__item-link {
             font-size: 14px;
             text-align: center;

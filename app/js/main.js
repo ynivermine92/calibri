@@ -1,4 +1,14 @@
+
+
+
 $(function(){
+  $('.header__form-search').on('click', function(e){
+    e.preventDefault();
+  })
+
+
+
+
   document.querySelectorAll('.counter').forEach((counter) => {
     const btnMinus = counter.querySelector('.minus');
     const value = counter.querySelector('.counter__value');

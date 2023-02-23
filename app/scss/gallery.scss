@@ -3,6 +3,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 35px 35px;
+        
+    }
+    &__item{
+        transition: all 0.9s;
+        transform: scale(0.9);
+        &:hover{
+            transition: all 0.9s; 
+            transform: scale(1.0);
+        }
     }
 
     &__images {
@@ -21,10 +30,11 @@
         &__items{
             grid-gap: 35px 35px;
             justify-items: center;
+            max-width: 1120px;
+            margin: 0 auto;
         }
-
         &__images {
-            height: 550px;
+            height: 550 px;
             width: 550px;
         }
         .popiral-category__box{
@@ -33,27 +43,50 @@
 
     }
 }
-@media (max-width: 1140px) {
+
+@media (max-width: 1150px) {
     .gallery {
+        &__items{
+            max-width: 980px;
+        }
         &__images {
             height: 450px;
             width: 450px;
         }
+        
     }
 }
 @media (max-width: 950px) {
     .gallery {
         &__images {
+            height: 400px;
+            width: 400px;
+        }
+        &__items{
+            max-width: 800px;
+        }
+    }
+}
+@media (max-width: 890px) {
+    .gallery {
+        &__images {
             height: 350px;
             width: 350px;
         }
+        &__items{
+            max-width: 700px;
+        }
     }
+
 }
 @media (max-width: 760px) {
     .gallery {
         &__images {
             height: 280px;
             width: 280px;
+        }
+        &__items{
+            max-width: 600px;
         }
     }
 }
