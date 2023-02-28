@@ -97,7 +97,7 @@
         font-size: 18px;
         @extend %quicksand-600;
         text-align: center;
-        padding-top: 20px;
+        margin-top: 20px;
         padding: 0 30px;
     }
 
@@ -421,7 +421,7 @@
             transform: translateY(-210%);
         }
         &__item-link{
-            top: 180px;
+            top: 230px;
         }
         &__item:hover &__item-link {
             top: 180px;

@@ -18,6 +18,10 @@
     &__icon-images{
         max-width: 395px;
         height: 409px;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
     }
     &__container-mob{
         display: none;

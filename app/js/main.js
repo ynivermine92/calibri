@@ -45,13 +45,14 @@ $('.popiral-category__select-arrow').on('click', function(e){
 })
 
 
-  
+
   $(document).ready(function(){
     $('.popiral-category__input').inputmask({"mask": "+380-99-999-9999"}); 
   });
 
   $('.menu__mob').on('click', function(e){
     e.preventDefault();
+    debugger;
     $('.menu__mob').toggleClass('menu__mob--active')
     $('body').toggleClass('anchor')
     $('.header__opacity').toggleClass('is-active')
@@ -59,15 +60,19 @@ $('.popiral-category__select-arrow').on('click', function(e){
       $('.menu__mob').css({'background':'#feddff'});
       $('.menu__burgerMob').css({'display':'block'});
       $('.menu-bottom').css({'display':'none'});
+      $('.top').css({'display':'none'});
       $('.top__images').css({'display':'none'});
     }else{
       $('.menu__mob').css({'background':'none'});
       $('.menu__burgerMob').css({'display':'none'});
       $('.menu-bottom').css({'display':'flex'});
       $('.top__images').css({'display':'block'});
+      $('.top').css({'display':'block'});
     }
   })
   $('.menu__burgerMob-blockClose').on('click', function(e){
+    $('.top').css({'display':'block'});
+    $('.header__opacity').toggleClass('is-active')
      $('.menu__burgerMob').css({'display':'none'}); 
      $('.menu__mob').css({'background':'none'});
      $('.menu__burgerMob').css({'display':'none'});

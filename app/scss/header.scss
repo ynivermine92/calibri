@@ -72,7 +72,7 @@
         position:fixed;
         left: 0;
         right: 0;
-        top: 520px;
+        top: 640px;
         bottom: 0;
         height: 0;
         opacity: 0s;
@@ -220,6 +220,9 @@
                 transition: all 0.5s;
             }
         }
+        &__opacity{
+            top: 580px;
+        }
     }
 }
 @media (max-width: 450px){
@@ -251,9 +254,8 @@
     }
     &__burgerMob-blockClose{
         background-image: url('../images/icons/close.svg');
+        margin-left: auto;
         position: relative;
-        left: 556px;
-        top: 35px;
         width: 24px;
         height: 24px;
         cursor: pointer;
@@ -287,8 +289,10 @@
         }
     }
     &__burgerMob{
+        padding-left: 40px;
         span{
             padding-top: 15px;
+            padding-bottom: 15px;
             display: block;
             font-size: 10p;
             @extend %quicksand-500;
@@ -298,7 +302,6 @@
     &__burgerMob-phone{
         font-size: 28px;
         @extend %quicksand-600;
-        padding-left: 40px;
         display: block;
         padding-top: 10px;
     }
@@ -309,6 +312,9 @@
     &__burgerMob-item{
         @extend %quicksand-600;
     }
+    &__burgerMob-item:last-child{
+        padding-bottom: 20px;
+    }
     &__burgerMob-link:hover{
         color: #f188f2;
         transition: all 0.3s; 
@@ -317,17 +323,8 @@
     &__burgerMob-link--active{
             color: #f188f2; 
     }
-    &__burgerMob-inner{
-        padding-left: 40px;
-    }
-    &__burgerMob-subtitle{
-        padding-left: 40px;
-    }
     &__burgerMob{
         display: none;
-    }
-    &__burgerMob--active{
-        display:block;
     }
 }
 
@@ -373,15 +370,11 @@
         }
         &__burgerMob-item{
             padding-top: 30px;
-            padding-left: 40px;
             font-size: 24px;
         }
-        &__burgerMob{
-            max-width: 800px;
-        }
         &__burgerMob-blockClose{
-            left: 400px;
-            top: 55px;
+            top: 52px;
+            left: -14px;
         }
         &__items-mob--acvtive{
             display: block;
@@ -427,36 +420,24 @@
         }
         &__burgerMob{
             width: 100%;
-            position: fixed;
             z-index: 1;
             background-color: #Ffff;
         }
         &__burgerMob-item{
             font-size: 24px;
-            padding-top: 35px;
-            padding-left: 40px;
+    
           
         }
         &__burgerMob-item + .menu__burgerMob-item{
             padding-top: 30px;
         }
         &__burgerMob-blockClose{
-            top: 62px;
+            left: -28px;
         }
     }
 }
 
-@media (max-width: 450px){
-    .menu{
-        &__burgerMob-item{
-            padding-left: 10px;
-        }
-        &__burgerMob-blockClose{
-            left: 280px;
-        }
 
-    }
-}
 
 .menu-bottom{
     padding-top: 30px;
@@ -573,6 +554,7 @@
         }
     }
 }
+
 @media (max-width: 650px){
     .menu-bottom{
         &__items{
